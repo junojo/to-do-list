@@ -1,0 +1,13 @@
+<h1>To Do List</h1>
+
+{{#each tasks}}
+    {{> task}}
+{{/each}}
+
+<div class='task-add'>
+  <form method='POST'>
+    <label for='task-input'>Task</label>
+    <input id='task-input' type='text' name='task' placeholder='Add Task' />
+    <button>Add Task</button>
+  </form>
+</div>
